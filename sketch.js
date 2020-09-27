@@ -8,8 +8,8 @@ function setup() {
   background(220);
 
 
-randomIndex = int(random(hats.length))
-text(hats[randomIndex].type)
+randomIndex = int(random(hats.length));
+text(hats[randomIndex].type, 50, 50);
 
 }
 

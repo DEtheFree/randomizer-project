@@ -8,12 +8,18 @@ function setup() {
   background(220);
 
 
-randomIndex = int(random(hats.length));
-text(hats[randomIndex].type, 50, 50);
+
 
 }
 
 
 function draw() {
 
+}
+
+function mousePressed(){
+	background(random(200, 255));
+	randomIndex = int(random(hats.length));
+	text(hats[randomIndex].type, 50, 50);
+	hats.splice(randomIndex,1);
 }

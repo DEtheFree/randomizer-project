@@ -3,15 +3,18 @@ let hats = [{type: "tyrolean", color: "red"},{type: "stenton", color: "evergreen
 
 let randomIndex;
 let animating = false;
-
+let button;
 
 function setup() {
   createCanvas(400, 400);
   background(220);
-  textSize(26)
+  textSize(26);
+  imageMode(CENTER);
 
 text("What kinds of hats do I have?", 40, 50);
 
+button = createButton("click to randomize");
+button.mousePressed(buttonPressed);
 //after 1 sec, it will call the function the change the backgound color
 //set Timeout(changeBackground, 1000);
 //1000 = 1 second 
@@ -45,7 +48,8 @@ if (hats[0]){
 	}
 }
 
-function mousePressed(){
+
+function buttonPressed(){
 
 	animating = true;
 	setTimeout(randomizer, 2000);

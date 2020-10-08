@@ -1,5 +1,5 @@
 
-let hats = [{type: "tyrolean", color: "red"},{type: "stenton", color: "evergreen"},{type: "top hat", color: "black"},{type: "bowler", color: "black"},{type: "fez", color: "blue"}];
+let hats = [{type: "Tyrolean", color: "red"},{type: "Ten Gallon", color: "white"},{type: "Stenton", color: "evergreen"},{type: "Top Hat", color: "black"},{type: "Bowler", color: "black"},{type: "Fez", color: "blue"}];
 
 let randomIndex;
 let animating = false;
@@ -11,7 +11,7 @@ function setup() {
   textSize(26);
   imageMode(CENTER);
 
-text("What kinds of hats do I have?", 40, 50);
+text("What kinds of hats do I have in my pocket?", 40, 50);
 
 button = createButton("click to randomize");
 button.mousePressed(buttonPressed);

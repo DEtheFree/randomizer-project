@@ -29,6 +29,7 @@ button.mousePressed(buttonPressed);
 //after 1 sec, it will call the function the change the backgound color
 //set Timeout(changeBackground, 1000);
 //1000 = 1 second 
+preload();
 
 }
 
@@ -50,7 +51,7 @@ if (phrase[0]){
 	randomIndex = int(random(phrase.length));
 	text(phrase[randomIndex], 50, 50);
 	//text(hats[randomIndex].type + " which is colored " + hats[randomIndex].color, 50, 50);
-	image(ink, width/4, height/4)
+	image(ink, width/2, height/2)
 	
 	phrase.splice(randomIndex,1);
 } else {

@@ -14,7 +14,7 @@ let ink;
 
 function preload(){
 	let f = random(0)
-	ink = loadImage("assets/IMG_" + random(0, 6) + ".jpg")
+	ink = loadImage("assets/IMG_" + randomIndex + ".jpg")
 }
 
 function setup() {

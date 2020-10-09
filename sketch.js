@@ -12,7 +12,7 @@ function setup() {
   imageMode(CENTER);
 
 
-button = createButton("click to randomize");
+button = createButton("View Blots");
 button.mousePressed(buttonPressed);
 //after 1 sec, it will call the function the change the backgound color
 //set Timeout(changeBackground, 1000);
@@ -36,6 +36,7 @@ if (phrase[0]){
 
 	background(random(200, 255));
 	randomIndex = int(random(phrase.length));
+	text(phrase[randomIndex], 50, 50);
 	//text(hats[randomIndex].type + " which is colored " + hats[randomIndex].color, 50, 50);
 	
 	

@@ -1,5 +1,5 @@
 
-let hats = [{type: "Tyrolean", color: "red"},{type: "Ten Gallon", color: "white"},{type: "Stenton", color: "evergreen"},{type: "Top Hat", color: "black"},{type: "Bowler", color: "black"},{type: "Fez", color: "blue"}];
+let phrase = [{type: "Tyrolean", color: "red"},{type: "Ten Gallon", color: "white"},{type: "Stenton", color: "evergreen"},{type: "Top Hat", color: "black"},{type: "Bowler", color: "black"},{type: "Fez", color: "blue"}];
 
 let randomIndex;
 let animating = false;
@@ -33,15 +33,14 @@ function draw() {
 function randomizer(){
 	animating = false;
 
-if (hats[0]){
+if (phrase[0]){
 
 	background(random(200, 255));
-	randomIndex = int(random(hats.length));
+	randomIndex = int(random(phrase.length));
 	//text(hats[randomIndex].type + " which is colored " + hats[randomIndex].color, 50, 50);
-	text(`${hats[randomIndex].type} which is colored 
-		${hats[randomIndex].color}`, 50, 50);
 	
-	hats.splice(randomIndex,1);
+	
+	phrase.splice(randomIndex,1);
 } else {
 	background(random(200,255));
 	text("No more hats.", 50, 50);

@@ -1,5 +1,5 @@
 
-let phrase = [{type: "Tyrolean", color: "red"},{type: "Ten Gallon", color: "white"},{type: "Stenton", color: "evergreen"},{type: "Top Hat", color: "black"},{type: "Bowler", color: "black"},{type: "Fez", color: "blue"}];
+let phrase = ["So what do you see here","Very Good, Now this one","How about this one","And here?","There are no right or wrong answers here","And how about this one","Ok, Let me make sure that I heard you right, did you just say the warm welcoming hand of Satan?"];
 
 let randomIndex;
 let animating = false;
@@ -11,7 +11,6 @@ function setup() {
   textSize(26);
   imageMode(CENTER);
 
-text("What kinds of hats do I have in my pocket?", 40, 50);
 
 button = createButton("click to randomize");
 button.mousePressed(buttonPressed);

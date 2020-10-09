@@ -13,7 +13,7 @@ let button;
 let ink;
 
 function preload(){
-	let f = random(0)
+
 	ink = loadImage("assets/IMG_" + randomIndex + ".jpg")
 }
 

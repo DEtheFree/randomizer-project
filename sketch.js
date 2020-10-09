@@ -1,9 +1,21 @@
 
-let phrase = ["So what do you see here","Very Good, Now this one","How about this one","And here?","There are no right or wrong answers here","And how about this one","Ok, Let me make sure that I heard you right, did you just say the warm welcoming hand of Satan?"];
+let phrase = ["So what do you see here"
+,"Very Good, Now this one"
+,"How about this one"
+,"And here?"
+,"There are no right or wrong answers here"
+,"And how about this one"
+,"Ok, Let me make sure that I heard you right, did you just say the warm welcoming hand of Satan?"];
 
 let randomIndex;
 let animating = false;
 let button;
+let ink;
+
+function preload(){
+	let f = random(0)
+	ink = loadImage("assets/IMG_" + random(0, 6) + ".jpg")
+}
 
 function setup() {
   createCanvas(400, 400);
@@ -38,7 +50,7 @@ if (phrase[0]){
 	randomIndex = int(random(phrase.length));
 	text(phrase[randomIndex], 50, 50);
 	//text(hats[randomIndex].type + " which is colored " + hats[randomIndex].color, 50, 50);
-	
+	image(ink, width/2, height/2)
 	
 	phrase.splice(randomIndex,1);
 } else {
